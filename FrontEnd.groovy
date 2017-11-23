@@ -7,7 +7,8 @@ class FrontEnd {
     FrontEnd() {
         def builder = new SwingBuilder()
         builder.edt {
-            frame(title: 'Battleship', size: [500, 350], show: true, defaultCloseOperation: WindowConstants.EXIT_ON_CLOSE) {
+            frame(title: 'Battleship', size: [500, 350], show: true, locationRelativeTo: null, resizable: false, 
+                  defaultCloseOperation: WindowConstants.EXIT_ON_CLOSE) {
                 borderLayout(vgap: 5)
 
                 panel(constraints: BorderLayout.CENTER) {
