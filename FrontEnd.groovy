@@ -71,28 +71,28 @@ class FrontEnd {
                                 b1 = button text:'  ', actionPerformed: {showPos(b1, 0, 1, BackEnd.board); b1.setEnabled(false)}
                             }
                             td {
-                                c1 = button text:'  ', actionPerformed: {showPos(c1, 0, 0, BackEnd.board); c1.setEnabled(false)}
+                                c1 = button text:'  ', actionPerformed: {showPos(c1, 0, 2, BackEnd.board); c1.setEnabled(false)}
                             }
                             td {
-                                d1 = button text:'  ', actionPerformed: {showPos(d1, 0, 0, BackEnd.board); d1.setEnabled(false)}
+                                d1 = button text:'  ', actionPerformed: {showPos(d1, 0, 3, BackEnd.board); d1.setEnabled(false)}
                             }
                             td {
-                                e1 = button text:'  ', actionPerformed: {showPos(e1, 0, 0, BackEnd.board); e1.setEnabled(false)}
+                                e1 = button text:'  ', actionPerformed: {showPos(e1, 0, 4, BackEnd.board); e1.setEnabled(false)}
                             }
                             td {
-                                f1 = button text:'  ', actionPerformed: {showPos(f1, 0, 0, BackEnd.board); f1.setEnabled(false)}
+                                f1 = button text:'  ', actionPerformed: {showPos(f1, 0, 5, BackEnd.board); f1.setEnabled(false)}
                             }
                             td {
-                                g1 = button text:'  ', actionPerformed: {showPos(g1, 0, 0, BackEnd.board); g1.setEnabled(false)}
+                                g1 = button text:'  ', actionPerformed: {showPos(g1, 0, 6, BackEnd.board); g1.setEnabled(false)}
                             }
                             td {
-                                h1 = button text:'  ', actionPerformed: {showPos(h1, 0, 0, BackEnd.board); h1.setEnabled(false)}
+                                h1 = button text:'  ', actionPerformed: {showPos(h1, 0, 7, BackEnd.board); h1.setEnabled(false)}
                             }
                             td {
-                                i1 = button text:'  ', actionPerformed: {showPos(i1, 0, 0, BackEnd.board); i1.setEnabled(false)}
+                                i1 = button text:'  ', actionPerformed: {showPos(i1, 0, 8, BackEnd.board); i1.setEnabled(false)}
                             }
                             td {
-                                j1 = button text:'  ', actionPerformed: {showPos(j1, 0, 0, BackEnd.board); j1.setEnabled(false)}
+                                j1 = button text:'  ', actionPerformed: {showPos(j1, 0, 9, BackEnd.board); j1.setEnabled(false)}
                             }
                         } // Terminar de configurar por essa linha e então copiar para as demais.
                         tr {
@@ -100,34 +100,34 @@ class FrontEnd {
                                 label '2'
                             }
                             td {
-                                a2 = button text:' ', actionPerformed: {showPos(a2, 0, 0, BackEnd.board); a2.setEnabled(false)}
+                                a2 = button text:' ', actionPerformed: {showPos(a2, 1, 0, BackEnd.board); a2.setEnabled(false)}
                             }
                             td {
-                                b2 = button text:' ', actionPerformed: {showPos(b2, 0, 1, BackEnd.board); b2.setEnabled(false)}
+                                b2 = button text:' ', actionPerformed: {showPos(b2, 1, 1, BackEnd.board); b2.setEnabled(false)}
                             }
                             td {
-                                c2 = button text:' ', actionPerformed: {showPos(c2, 0, 0, BackEnd.board); c2.setEnabled(false)}
+                                c2 = button text:' ', actionPerformed: {showPos(c2, 1, 2, BackEnd.board); c2.setEnabled(false)}
                             }
                             td {
-                                d2 = button text:' ', actionPerformed: {showPos(d2, 0, 0, BackEnd.board); d2.setEnabled(false)}
+                                d2 = button text:' ', actionPerformed: {showPos(d2, 1, 3, BackEnd.board); d2.setEnabled(false)}
                             }
                             td {
-                                e2 = button text:' ', actionPerformed: {showPos(e2, 0, 0, BackEnd.board); e2.setEnabled(false)}
+                                e2 = button text:' ', actionPerformed: {showPos(e2, 1, 4, BackEnd.board); e2.setEnabled(false)}
                             }
                             td {
-                                f2 = button text:' ', actionPerformed: {showPos(f2, 0, 0, BackEnd.board); f2.setEnabled(false)}
+                                f2 = button text:' ', actionPerformed: {showPos(f2, 1, 5, BackEnd.board); f2.setEnabled(false)}
                             }
                             td {
-                                g2 = button text:' ', actionPerformed: {showPos(g2, 0, 0, BackEnd.board); g2.setEnabled(false)}
+                                g2 = button text:' ', actionPerformed: {showPos(g2, 1, 6, BackEnd.board); g2.setEnabled(false)}
                             }
                             td {
-                                h2 = button text:' ', actionPerformed: {showPos(h2, 0, 0, BackEnd.board); h2.setEnabled(false)}
+                                h2 = button text:' ', actionPerformed: {showPos(h2, 1, 7, BackEnd.board); h2.setEnabled(false)}
                             }
                             td {
-                                i2 = button text:' ', actionPerformed: {showPos(i2, 0, 0, BackEnd.board); i2.setEnabled(false)}
+                                i2 = button text:' ', actionPerformed: {showPos(i2, 1, 8, BackEnd.board); i2.setEnabled(false)}
                             }
                             td {
-                                j2 = button text:' ', actionPerformed: {showPos(j2, 0, 0, BackEnd.board); j2.setEnabled(false)}
+                                j2 = button text:' ', actionPerformed: {showPos(j2, 1, 9, BackEnd.board); j2.setEnabled(false)}
                             }
                         }
                         tr {
@@ -135,34 +135,34 @@ class FrontEnd {
                                 label '3'
                             }
                             td {
-                                a3 = button text:' ', actionPerformed: {showPos(a3, 0, 0, BackEnd.board); a3.setEnabled(false)}
+                                a3 = button text:' ', actionPerformed: {showPos(a3, 2, 0, BackEnd.board); a3.setEnabled(false)}
                             }
                             td {
-                                b3 = button text:' ', actionPerformed: {showPos(b3, 0, 1, BackEnd.board); b3.setEnabled(false)}
+                                b3 = button text:' ', actionPerformed: {showPos(b3, 2, 1, BackEnd.board); b3.setEnabled(false)}
                             }
                             td {
-                                c3 = button text:' ', actionPerformed: {showPos(c3, 0, 0, BackEnd.board); c3.setEnabled(false)}
+                                c3 = button text:' ', actionPerformed: {showPos(c3, 2, 2, BackEnd.board); c3.setEnabled(false)}
                             }
                             td {
-                                d3 = button text:' ', actionPerformed: {showPos(d3, 0, 0, BackEnd.board); d3.setEnabled(false)}
+                                d3 = button text:' ', actionPerformed: {showPos(d3, 2, 3, BackEnd.board); d3.setEnabled(false)}
                             }
                             td {
-                                e3 = button text:' ', actionPerformed: {showPos(e3, 0, 0, BackEnd.board); e3.setEnabled(false)}
+                                e3 = button text:' ', actionPerformed: {showPos(e3, 2, 4, BackEnd.board); e3.setEnabled(false)}
                             }
                             td {
-                                f3 = button text:' ', actionPerformed: {showPos(f3, 0, 0, BackEnd.board); f3.setEnabled(false)}
+                                f3 = button text:' ', actionPerformed: {showPos(f3, 2, 5, BackEnd.board); f3.setEnabled(false)}
                             }
                             td {
-                                g3 = button text:' ', actionPerformed: {showPos(g3, 0, 0, BackEnd.board); g3.setEnabled(false)}
+                                g3 = button text:' ', actionPerformed: {showPos(g3, 2, 6, BackEnd.board); g3.setEnabled(false)}
                             }
                             td {
-                                h3 = button text:' ', actionPerformed: {showPos(h3, 0, 0, BackEnd.board); h3.setEnabled(false)}
+                                h3 = button text:' ', actionPerformed: {showPos(h3, 2, 7, BackEnd.board); h3.setEnabled(false)}
                             }
                             td {
-                                i3 = button text:' ', actionPerformed: {showPos(i3, 0, 0, BackEnd.board); i3.setEnabled(false)}
+                                i3 = button text:' ', actionPerformed: {showPos(i3, 2, 8, BackEnd.board); i3.setEnabled(false)}
                             }
                             td {
-                                j3 = button text:' ', actionPerformed: {showPos(j3, 0, 0, BackEnd.board); j3.setEnabled(false)}
+                                j3 = button text:' ', actionPerformed: {showPos(j3, 2, 9, BackEnd.board); j3.setEnabled(false)}
                             }
                         }
                         tr {
@@ -170,34 +170,34 @@ class FrontEnd {
                                 label '4'
                             }
                             td {
-                                a4 = button text:' ', actionPerformed: {showPos(a4, 0, 0, BackEnd.board); a4.setEnabled(false)}
+                                a4 = button text:' ', actionPerformed: {showPos(a4, 3, 0, BackEnd.board); a4.setEnabled(false)}
                             }
                             td {
-                                b4 = button text:' ', actionPerformed: {showPos(b4, 0, 1, BackEnd.board); b4.setEnabled(false)}
+                                b4 = button text:' ', actionPerformed: {showPos(b4, 3, 1, BackEnd.board); b4.setEnabled(false)}
                             }
                             td {
-                                c4 = button text:' ', actionPerformed: {showPos(c4, 0, 0, BackEnd.board); c4.setEnabled(false)}
+                                c4 = button text:' ', actionPerformed: {showPos(c4, 3, 2, BackEnd.board); c4.setEnabled(false)}
                             }
                             td {
-                                d4 = button text:' ', actionPerformed: {showPos(d4, 0, 0, BackEnd.board); d4.setEnabled(false)}
+                                d4 = button text:' ', actionPerformed: {showPos(d4, 3, 3, BackEnd.board); d4.setEnabled(false)}
                             }
                             td {
-                                e4 = button text:' ', actionPerformed: {showPos(e4, 0, 0, BackEnd.board); e4.setEnabled(false)}
+                                e4 = button text:' ', actionPerformed: {showPos(e4, 3, 4, BackEnd.board); e4.setEnabled(false)}
                             }
                             td {
-                                f4 = button text:' ', actionPerformed: {showPos(f4, 0, 0, BackEnd.board); f4.setEnabled(false)}
+                                f4 = button text:' ', actionPerformed: {showPos(f4, 3, 5, BackEnd.board); f4.setEnabled(false)}
                             }
                             td {
-                                g4 = button text:' ', actionPerformed: {showPos(g4, 0, 0, BackEnd.board); g4.setEnabled(false)}
+                                g4 = button text:' ', actionPerformed: {showPos(g4, 3, 6, BackEnd.board); g4.setEnabled(false)}
                             }
                             td {
-                                h4 = button text:' ', actionPerformed: {showPos(h4, 0, 0, BackEnd.board); h4.setEnabled(false)}
+                                h4 = button text:' ', actionPerformed: {showPos(h4, 3, 7, BackEnd.board); h4.setEnabled(false)}
                             }
                             td {
-                                i4 = button text:' ', actionPerformed: {showPos(i4, 0, 0, BackEnd.board); i4.setEnabled(false)}
+                                i4 = button text:' ', actionPerformed: {showPos(i4, 3, 8, BackEnd.board); i4.setEnabled(false)}
                             }
                             td {
-                                j4 = button text:' ', actionPerformed: {showPos(j4, 0, 0, BackEnd.board); j4.setEnabled(false)}
+                                j4 = button text:' ', actionPerformed: {showPos(j4, 3, 9, BackEnd.board); j4.setEnabled(false)}
                             }
                         }
                         tr {
@@ -205,34 +205,34 @@ class FrontEnd {
                                 label '5'
                             }
                             td {
-                                a5 = button text:' ', actionPerformed: {showPos(a5, 0, 0, BackEnd.board); a5.setEnabled(false)}
+                                a5 = button text:' ', actionPerformed: {showPos(a5, 4, 0, BackEnd.board); a5.setEnabled(false)}
                             }
                             td {
-                                b5 = button text:' ', actionPerformed: {showPos(b5, 0, 1, BackEnd.board); b5.setEnabled(false)}
+                                b5 = button text:' ', actionPerformed: {showPos(b5, 4, 1, BackEnd.board); b5.setEnabled(false)}
                             }
                             td {
-                                c5 = button text:' ', actionPerformed: {showPos(c5, 0, 0, BackEnd.board); c5.setEnabled(false)}
+                                c5 = button text:' ', actionPerformed: {showPos(c5, 4, 2, BackEnd.board); c5.setEnabled(false)}
                             }
                             td {
-                                d5 = button text:' ', actionPerformed: {showPos(d5, 0, 0, BackEnd.board); d5.setEnabled(false)}
+                                d5 = button text:' ', actionPerformed: {showPos(d5, 4, 3, BackEnd.board); d5.setEnabled(false)}
                             }
                             td {
-                                e5 = button text:' ', actionPerformed: {showPos(e5, 0, 0, BackEnd.board); e5.setEnabled(false)}
+                                e5 = button text:' ', actionPerformed: {showPos(e5, 4, 4, BackEnd.board); e5.setEnabled(false)}
                             }
                             td {
-                                f5 = button text:' ', actionPerformed: {showPos(f5, 0, 0, BackEnd.board); f5.setEnabled(false)}
+                                f5 = button text:' ', actionPerformed: {showPos(f5, 4, 5, BackEnd.board); f5.setEnabled(false)}
                             }
                             td {
-                                g5 = button text:' ', actionPerformed: {showPos(g5, 0, 0, BackEnd.board); g5.setEnabled(false)}
+                                g5 = button text:' ', actionPerformed: {showPos(g5, 4, 6, BackEnd.board); g5.setEnabled(false)}
                             }
                             td {
-                                h5 = button text:' ', actionPerformed: {showPos(h5, 0, 0, BackEnd.board); h5.setEnabled(false)}
+                                h5 = button text:' ', actionPerformed: {showPos(h5, 4, 7, BackEnd.board); h5.setEnabled(false)}
                             }
                             td {
-                                i5 = button text:' ', actionPerformed: {showPos(i5, 0, 0, BackEnd.board); i5.setEnabled(false)}
+                                i5 = button text:' ', actionPerformed: {showPos(i5, 4, 8, BackEnd.board); i5.setEnabled(false)}
                             }
                             td {
-                                j5 = button text:' ', actionPerformed: {showPos(j5, 0, 0, BackEnd.board); j5.setEnabled(false)}
+                                j5 = button text:' ', actionPerformed: {showPos(j5, 4, 9, BackEnd.board); j5.setEnabled(false)}
                             }
                         }
                         tr {
@@ -240,34 +240,34 @@ class FrontEnd {
                                 label '6'
                             }
                             td {
-                                a6 = button text:' ', actionPerformed: {showPos(a6, 0, 0, BackEnd.board); a6.setEnabled(false)}
+                                a6 = button text:' ', actionPerformed: {showPos(a6, 5, 0, BackEnd.board); a6.setEnabled(false)}
                             }
                             td {
-                                b6 = button text:' ', actionPerformed: {showPos(b6, 0, 1, BackEnd.board); b6.setEnabled(false)}
+                                b6 = button text:' ', actionPerformed: {showPos(b6, 5, 1, BackEnd.board); b6.setEnabled(false)}
                             }
                             td {
-                                c6 = button text:' ', actionPerformed: {showPos(c6, 0, 0, BackEnd.board); c6.setEnabled(false)}
+                                c6 = button text:' ', actionPerformed: {showPos(c6, 5, 2, BackEnd.board); c6.setEnabled(false)}
                             }
                             td {
-                                d6 = button text:' ', actionPerformed: {showPos(d6, 0, 0, BackEnd.board); d6.setEnabled(false)}
+                                d6 = button text:' ', actionPerformed: {showPos(d6, 5, 3, BackEnd.board); d6.setEnabled(false)}
                             }
                             td {
-                                e6 = button text:' ', actionPerformed: {showPos(e6, 0, 0, BackEnd.board); e6.setEnabled(false)}
+                                e6 = button text:' ', actionPerformed: {showPos(e6, 5, 4, BackEnd.board); e6.setEnabled(false)}
                             }
                             td {
-                                f6 = button text:' ', actionPerformed: {showPos(f6, 0, 0, BackEnd.board); f6.setEnabled(false)}
+                                f6 = button text:' ', actionPerformed: {showPos(f6, 5, 5, BackEnd.board); f6.setEnabled(false)}
                             }
                             td {
-                                g6 = button text:' ', actionPerformed: {showPos(g6, 0, 0, BackEnd.board); g6.setEnabled(false)}
+                                g6 = button text:' ', actionPerformed: {showPos(g6, 5, 6, BackEnd.board); g6.setEnabled(false)}
                             }
                             td {
-                                h6 = button text:' ', actionPerformed: {showPos(h6, 0, 0, BackEnd.board); h6.setEnabled(false)}
+                                h6 = button text:' ', actionPerformed: {showPos(h6, 5, 7, BackEnd.board); h6.setEnabled(false)}
                             }
                             td {
-                                i6 = button text:' ', actionPerformed: {showPos(i6, 0, 0, BackEnd.board); i6.setEnabled(false)}
+                                i6 = button text:' ', actionPerformed: {showPos(i6, 5, 8, BackEnd.board); i6.setEnabled(false)}
                             }
                             td {
-                                j6 = button text:' ', actionPerformed: {showPos(j6, 0, 0, BackEnd.board); j6.setEnabled(false)}
+                                j6 = button text:' ', actionPerformed: {showPos(j6, 5, 9, BackEnd.board); j6.setEnabled(false)}
                             }
                         }
                         tr {
@@ -275,34 +275,34 @@ class FrontEnd {
                                 label '7'
                             }
                             td {
-                                a7 = button text:' ', actionPerformed: {showPos(a7, 0, 0, BackEnd.board); a7.setEnabled(false)}
+                                a7 = button text:' ', actionPerformed: {showPos(a7, 6, 0, BackEnd.board); a7.setEnabled(false)}
                             }
                             td {
-                                b7 = button text:' ', actionPerformed: {showPos(b7, 0, 1, BackEnd.board); b7.setEnabled(false)}
+                                b7 = button text:' ', actionPerformed: {showPos(b7, 6, 1, BackEnd.board); b7.setEnabled(false)}
                             }
                             td {
-                                c7 = button text:' ', actionPerformed: {showPos(c7, 0, 0, BackEnd.board); c7.setEnabled(false)}
+                                c7 = button text:' ', actionPerformed: {showPos(c7, 6, 2, BackEnd.board); c7.setEnabled(false)}
                             }
                             td {
-                                d7 = button text:' ', actionPerformed: {showPos(d7, 0, 0, BackEnd.board); d7.setEnabled(false)}
+                                d7 = button text:' ', actionPerformed: {showPos(d7, 6, 3, BackEnd.board); d7.setEnabled(false)}
                             }
                             td {
-                                e7 = button text:' ', actionPerformed: {showPos(e7, 0, 0, BackEnd.board); e7.setEnabled(false)}
+                                e7 = button text:' ', actionPerformed: {showPos(e7, 6, 4, BackEnd.board); e7.setEnabled(false)}
                             }
                             td {
-                                f7 = button text:' ', actionPerformed: {showPos(f7, 0, 0, BackEnd.board); f7.setEnabled(false)}
+                                f7 = button text:' ', actionPerformed: {showPos(f7, 6, 5, BackEnd.board); f7.setEnabled(false)}
                             }
                             td {
-                                g7 = button text:' ', actionPerformed: {showPos(g7, 0, 0, BackEnd.board); g7.setEnabled(false)}
+                                g7 = button text:' ', actionPerformed: {showPos(g7, 6, 6, BackEnd.board); g7.setEnabled(false)}
                             }
                             td {
-                                h7 = button text:' ', actionPerformed: {showPos(h7, 0, 0, BackEnd.board); h7.setEnabled(false)}
+                                h7 = button text:' ', actionPerformed: {showPos(h7, 6, 7, BackEnd.board); h7.setEnabled(false)}
                             }
                             td {
-                                i7 = button text:' ', actionPerformed: {showPos(i7, 0, 0, BackEnd.board); i7.setEnabled(false)}
+                                i7 = button text:' ', actionPerformed: {showPos(i7, 6, 8, BackEnd.board); i7.setEnabled(false)}
                             }
                             td {
-                                j7 = button text:' ', actionPerformed: {showPos(j7, 0, 0, BackEnd.board); j7.setEnabled(false)}
+                                j7 = button text:' ', actionPerformed: {showPos(j7, 6, 9, BackEnd.board); j7.setEnabled(false)}
                             }
                         }
                         tr {
@@ -310,34 +310,34 @@ class FrontEnd {
                                 label '8'
                             }
                             td {
-                                a8 = button text:' ', actionPerformed: {showPos(a8, 0, 0, BackEnd.board); a8.setEnabled(false)}
+                                a8 = button text:' ', actionPerformed: {showPos(a8, 7, 0, BackEnd.board); a8.setEnabled(false)}
                             }
                             td {
-                                b8 = button text:' ', actionPerformed: {showPos(b8, 0, 1, BackEnd.board); b8.setEnabled(false)}
+                                b8 = button text:' ', actionPerformed: {showPos(b8, 7, 1, BackEnd.board); b8.setEnabled(false)}
                             }
                             td {
-                                c8 = button text:' ', actionPerformed: {showPos(c8, 0, 0, BackEnd.board); c8.setEnabled(false)}
+                                c8 = button text:' ', actionPerformed: {showPos(c8, 7, 2, BackEnd.board); c8.setEnabled(false)}
                             }
                             td {
-                                d8 = button text:' ', actionPerformed: {showPos(d8, 0, 0, BackEnd.board); d8.setEnabled(false)}
+                                d8 = button text:' ', actionPerformed: {showPos(d8, 7, 3, BackEnd.board); d8.setEnabled(false)}
                             }
                             td {
-                                e8 = button text:' ', actionPerformed: {showPos(e8, 0, 0, BackEnd.board); e8.setEnabled(false)}
+                                e8 = button text:' ', actionPerformed: {showPos(e8, 7, 4, BackEnd.board); e8.setEnabled(false)}
                             }
                             td {
-                                f8 = button text:' ', actionPerformed: {showPos(f8, 0, 0, BackEnd.board); f8.setEnabled(false)}
+                                f8 = button text:' ', actionPerformed: {showPos(f8, 7, 5, BackEnd.board); f8.setEnabled(false)}
                             }
                             td {
-                                g8 = button text:' ', actionPerformed: {showPos(g8, 0, 0, BackEnd.board); g8.setEnabled(false)}
+                                g8 = button text:' ', actionPerformed: {showPos(g8, 7, 6, BackEnd.board); g8.setEnabled(false)}
                             }
                             td {
-                                h8 = button text:' ', actionPerformed: {showPos(h8, 0, 0, BackEnd.board); h8.setEnabled(false)}
+                                h8 = button text:' ', actionPerformed: {showPos(h8, 7, 7, BackEnd.board); h8.setEnabled(false)}
                             }
                             td {
-                                i8 = button text:' ', actionPerformed: {showPos(i8, 0, 0, BackEnd.board); i8.setEnabled(false)}
+                                i8 = button text:' ', actionPerformed: {showPos(i8, 7, 8, BackEnd.board); i8.setEnabled(false)}
                             }
                             td {
-                                j8 = button text:' ', actionPerformed: {showPos(j8, 0, 0, BackEnd.board); j8.setEnabled(false)}
+                                j8 = button text:' ', actionPerformed: {showPos(j8, 7, 9, BackEnd.board); j8.setEnabled(false)}
                             }
                         }
                         tr {
@@ -345,34 +345,34 @@ class FrontEnd {
                                 label '9'
                             }
                             td {
-                                a9 = button text:' ', actionPerformed: {showPos(a9, 0, 0, BackEnd.board); a9.setEnabled(false)}
+                                a9 = button text:' ', actionPerformed: {showPos(a9, 8, 0, BackEnd.board); a9.setEnabled(false)}
                             }
                             td {
-                                b9 = button text:' ', actionPerformed: {showPos(b9, 0, 1, BackEnd.board); b9.setEnabled(false)}
+                                b9 = button text:' ', actionPerformed: {showPos(b9, 8, 1, BackEnd.board); b9.setEnabled(false)}
                             }
                             td {
-                                c9 = button text:' ', actionPerformed: {showPos(c9, 0, 0, BackEnd.board); c9.setEnabled(false)}
+                                c9 = button text:' ', actionPerformed: {showPos(c9, 8, 2, BackEnd.board); c9.setEnabled(false)}
                             }
                             td {
-                                d9 = button text:' ', actionPerformed: {showPos(d9, 0, 0, BackEnd.board); d9.setEnabled(false)}
+                                d9 = button text:' ', actionPerformed: {showPos(d9, 8, 3, BackEnd.board); d9.setEnabled(false)}
                             }
                             td {
-                                e9 = button text:' ', actionPerformed: {showPos(e9, 0, 0, BackEnd.board); e9.setEnabled(false)}
+                                e9 = button text:' ', actionPerformed: {showPos(e9, 8, 4, BackEnd.board); e9.setEnabled(false)}
                             }
                             td {
-                                f9 = button text:' ', actionPerformed: {showPos(f9, 0, 0, BackEnd.board); f9.setEnabled(false)}
+                                f9 = button text:' ', actionPerformed: {showPos(f9, 8, 5, BackEnd.board); f9.setEnabled(false)}
                             }
                             td {
-                                g9 = button text:' ', actionPerformed: {showPos(g9, 0, 0, BackEnd.board); g9.setEnabled(false)}
+                                g9 = button text:' ', actionPerformed: {showPos(g9, 8, 6, BackEnd.board); g9.setEnabled(false)}
                             }
                             td {
-                                h9 = button text:' ', actionPerformed: {showPos(h9, 0, 0, BackEnd.board); h9.setEnabled(false)}
+                                h9 = button text:' ', actionPerformed: {showPos(h9, 8, 7, BackEnd.board); h9.setEnabled(false)}
                             }
                             td {
-                                i9 = button text:' ', actionPerformed: {showPos(i9, 0, 0, BackEnd.board); i9.setEnabled(false)}
+                                i9 = button text:' ', actionPerformed: {showPos(i9, 8, 8, BackEnd.board); i9.setEnabled(false)}
                             }
                             td {
-                                j9 = button text:' ', actionPerformed: {showPos(j9, 0, 0, BackEnd.board); j9.setEnabled(false)}
+                                j9 = button text:' ', actionPerformed: {showPos(j9, 8, 9, BackEnd.board); j9.setEnabled(false)}
                             }
                         }
                         tr {
@@ -380,34 +380,34 @@ class FrontEnd {
                                 label '10'
                             }
                             td {
-                                a10 = button text:' ', actionPerformed: {showPos(a10, 0, 0, BackEnd.board); a10.setEnabled(false)}
+                                a10 = button text:' ', actionPerformed: {showPos(a10, 9, 0, BackEnd.board); a10.setEnabled(false)}
                             }
                             td {
-                                b10 = button text:' ', actionPerformed: {showPos(b10, 0, 1, BackEnd.board); b10.setEnabled(false)}
+                                b10 = button text:' ', actionPerformed: {showPos(b10, 9, 1, BackEnd.board); b10.setEnabled(false)}
                             }
                             td {
-                                c10 = button text:' ', actionPerformed: {showPos(c10, 0, 0, BackEnd.board); c10.setEnabled(false)}
+                                c10 = button text:' ', actionPerformed: {showPos(c10, 9, 2, BackEnd.board); c10.setEnabled(false)}
                             }
                             td {
-                                d10 = button text:' ', actionPerformed: {showPos(d10, 0, 0, BackEnd.board); d10.setEnabled(false)}
+                                d10 = button text:' ', actionPerformed: {showPos(d10, 9, 3, BackEnd.board); d10.setEnabled(false)}
                             }
                             td {
-                                e10 = button text:' ', actionPerformed: {showPos(e10, 0, 0, BackEnd.board); e10.setEnabled(false)}
+                                e10 = button text:' ', actionPerformed: {showPos(e10, 9, 4, BackEnd.board); e10.setEnabled(false)}
                             }
                             td {
-                                f10 = button text:' ', actionPerformed: {showPos(f10, 0, 0, BackEnd.board); f10.setEnabled(false)}
+                                f10 = button text:' ', actionPerformed: {showPos(f10, 9, 5, BackEnd.board); f10.setEnabled(false)}
                             }
                             td {
-                                g10 = button text:' ', actionPerformed: {showPos(g10, 0, 0, BackEnd.board); g10.setEnabled(false)}
+                                g10 = button text:' ', actionPerformed: {showPos(g10, 9, 6, BackEnd.board); g10.setEnabled(false)}
                             }
                             td {
-                                h10 = button text:' ', actionPerformed: {showPos(h10, 0, 0, BackEnd.board); h10.setEnabled(false)}
+                                h10 = button text:' ', actionPerformed: {showPos(h10, 9, 7, BackEnd.board); h10.setEnabled(false)}
                             }
                             td {
-                                i10 = button text:' ', actionPerformed: {showPos(i10, 0, 0, BackEnd.board); i10.setEnabled(false)}
+                                i10 = button text:' ', actionPerformed: {showPos(i10, 9, 8, BackEnd.board); i10.setEnabled(false)}
                             }
                             td {
-                                j10 = button text:' ', actionPerformed: {showPos(j10, 0, 0, BackEnd.board); j10.setEnabled(false)}
+                                j10 = button text:' ', actionPerformed: {showPos(j10, 9, 9, BackEnd.board); j10.setEnabled(false)}
                             }
                         }
                     }
@@ -417,8 +417,8 @@ class FrontEnd {
         }
     }
 
-    static void showPos (JButton b, int row, int col, ArrayList<Integer> board) {
-        if (board[row][col] == 1) {
+    void showPos (JButton b, int row, int col, ArrayList<Integer> board) {
+        if (board[row][col] != 0) {
             println('yay')
         }
         else {
@@ -426,3 +426,4 @@ class FrontEnd {
         }
     }
 }
+
