@@ -1,23 +1,19 @@
-package com.batalhanaval
 
 class BackEnd {
 
-        static final int battleship = 4
-        static final int cruiser = 3
-        static final int destroyer = 2
-        static final int submarine = 1
+        static final int battleship = 3
+        static final int submarine = 2
+        static final int mine = 1
         static final int size = 10
         static final int horizontal = 0
         static final int vertical = 1
-        static final int num_battleships = 1
-        static final int num_cruisers = 2
-        static final int num_destroyers = 3
+        static final int num_battleships = 3
         static final int num_submarines = 4
+        static final int num_mines = 5
 
         static List<Integer> board = new ArrayList<Integer>()
 
-        
-        void init_board() {
+        void initBoard() {
             for (int i = 0; i < size * size; i++) {
 
                 board << 0
@@ -95,30 +91,26 @@ class BackEnd {
         }
 
         
-
         void shipsPlacement() {
 
             for (int i = 0; i < num_battleships; i++) {
                 generator(battleship)
             }
 
-            for(int i = 0; i < num_cruisers; i++){
-                generator(cruiser)
-            }
-
-            for(int i = 0; i < num_destroyers; i++){
-                generator(destroyer)
-            }
 
             for(int i = 0; i < num_submarines; i++){
                 generator(submarine)
+            }
+
+            for(int i = 0; i < num_mines; i++){
+                generator(mine)
             }
 
         }
 
         BackEnd(){
 
-            init_board()
+            initBoard()
             shipsPlacement()
         }
 }
