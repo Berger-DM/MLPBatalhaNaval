@@ -2,7 +2,6 @@ import groovy.swing.SwingBuilder
 
 import javax.swing.*
 import java.awt.BorderLayout
-import java.awt.Color
 import java.awt.Dimension
 
 
@@ -720,7 +719,6 @@ class FrontEnd {
         switch (pos) {
             case 1:
                 b.setText('S') // S for Submarine
-                b.setForeground(Color.RED)
                 break
             case 2:
                 b.setText('D') // D for Destroyer
