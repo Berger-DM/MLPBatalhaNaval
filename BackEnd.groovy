@@ -1,3 +1,5 @@
+package com.batalhanaval
+
 class BackEnd {
 
         static final int battleship = 4
@@ -12,9 +14,9 @@ class BackEnd {
         static final int num_destroyers = 3
         static final int num_submarines = 4
 
-
         static List<Integer> board = new ArrayList<Integer>()
 
+        
         void init_board() {
             for (int i = 0; i < size * size; i++) {
 
@@ -24,25 +26,25 @@ class BackEnd {
         }
 
 
-        boolean possiblePlacement(int x_coord, int y_coord, int ship_size, int orientation) {
+        
+        boolean possiblePlacementVert(int x_coord, int y_coord, int ship_size) {
 
+            for (int i = 0; i < ship_size; i++) {
 
-            if (orientation == vertical) {
-
-                for (int i = 0; i < ship_size; i++) {
-
-                    if (board[x_coord][y_coord + i] == 1)
+                    if (board[x_coord][y_coord + i] != 0)
                         return false
                 }
 
-            } else if (orientation == horizontal) {
+            return true
+        }
 
-                for (int i = 0; i < ship_size; i++) {
 
-                    if (board[x_coord + i][y_coord] == 1)
-                        return false
-                }
+        boolean possiblePlacementHor(int x_coord, int y_coord, int ship_size) {
 
+            for (int i = 0; i < ship_size; i++) {
+
+                if (board[x_coord + i][y_coord] != 0)
+                    return false
             }
 
             return true
@@ -60,16 +62,16 @@ class BackEnd {
 
                 while (!flag) {
 
-                    x_coord = (int) (Math.random() * (10))
+                    x_coord = (int) (Math.random() * (size))
                     y_coord = (int) (Math.random() * (size - ship_size))
 
-                    flag = possiblePlacement(x_coord, y_coord, ship_size, orientation)
+                    flag = possiblePlacementVert(x_coord, y_coord, ship_size)
 
                 }
 
                 for (int i = 0; i < ship_size; i++) {
 
-                    board[x_coord][y_coord + i] = 1
+                    board[x_coord][y_coord + i] = ship_size
                 }
             }
 
@@ -79,19 +81,20 @@ class BackEnd {
                 while (!flag) {
 
                     x_coord = (int) (Math.random() * (size - ship_size))
-                    y_coord = (int) (Math.random() * (10))
+                    y_coord = (int) (Math.random() * (size))
 
-                    flag = possiblePlacement(x_coord, y_coord, ship_size, orientation)
+                    flag = possiblePlacementHor(x_coord, y_coord, ship_size)
                 }
 
                 for (int i = 0; i < ship_size; i++) {
 
-                    board[x_coord + i][y_coord] = 1
+                    board[x_coord + i][y_coord] = ship_size
                 }
             }
 
         }
 
+        
 
         void shipsPlacement() {
 
@@ -117,6 +120,5 @@ class BackEnd {
 
             init_board()
             shipsPlacement()
-            println(board)
         }
 }
