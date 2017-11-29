@@ -7,8 +7,7 @@ import java.awt.Dimension
 
 
 class FrontEnd {
-    private board
-
+    
     FrontEnd() {
         def builder = new SwingBuilder()
 
@@ -1515,15 +1514,14 @@ class FrontEnd {
 
          navios--
         if(navios == 0)
-            println("Voce ganhou")
+            builder.optionPane().showMessageDialog(null, "You Win!")
 
     }
 
     static void showPos (JButton b, int row, int col, ArrayList<Integer> board) {
-        int pos = (board[row][col] as Integer)
+        int pos = (Board.get(row, col) as Integer)
         switch (pos) {
             case 1:
-                b.setForeground(Color.RED)
                 b.setText('M') // M for Mine
                 testa()
                 break
