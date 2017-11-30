@@ -1,6 +1,6 @@
 package backend
 
-class Ships {
+abstract class Objects {
 
     static final int battleship = 3
     static final int submarine = 2
@@ -8,62 +8,24 @@ class Ships {
     static final int num_battleships = 3
     static final int num_submarines = 4
     static final int num_mines = 5
-    static final int horizontal = 0
-    static final int vertical = 1
 
-    protected int direction
     protected int coord_x, coord_y
     protected int size
 
     Board board = new Board()
 
-
-    def set_direction = { ->
-
-        direction = (int) (Math.random() * (2))
-    }
-
-    int get_direction(){
-
-        return direction
-    }
-
-
-//=========================
-    void set_location(int x, int y){
-
-       board.set(coord_x, coord_y, size)
-    }
-//==========================
-    int get_x(){
-        return coord_x
-    }
-
-    int get_y(){
-        return coord_y
-    }
-
     int get_size(){
         return size
     }
 
+    void set_location(){
+
+       board.set(coord_x, coord_y, size)
+    }
+
+
     void set_size(int ship_size){
         size = ship_size
-
-    }
-
-
-    Ships(){
-
-    }
-
-}
-
-class Mine extends Ships{
-
-    Mine(){
-        set_size(mine)
-        set_mines()
     }
 
     void set_x(){
@@ -72,6 +34,25 @@ class Mine extends Ships{
 
     void set_y(){
         coord_y = (int) (Math.random() * (Board.size))
+    }
+
+    boolean is_mine(){
+
+        if(get_size() == mine)
+            return true
+
+        else
+            return false
+    }
+
+
+}
+
+class Mine extends Objects{
+
+    Mine(){
+        set_size(mine)
+        set_mines()
     }
 
     void generator(){
@@ -84,7 +65,7 @@ class Mine extends Ships{
             set_y()
         }
 
-        set_location(coord_x, coord_y)
+        set_location()
     }
 
     void set_mines(){
@@ -94,8 +75,147 @@ class Mine extends Ships{
         }
     }
 
-    void nuke(){
+
+}
+
+abstract class Ships extends Objects{
+
+    static final int horizontal = 0
+    static final int vertical = 1
+    protected int direction
+
+    void set_direction() {
+        direction = (int) (Math.random() * (2))
+    }
+
+    int get_direction(){
+        return direction
+    }
+
+    int setx_horizontal(){
+        coord_x = (int) (Math.random() * (Board.size - size))
+    }
+
+    int sety_vertical(){
+        coord_y = (int) (Math.random() * (Board.size - size))
+    }
+
+    void set_location_vert(){
+
+        for (int i = 0; i < size; i++) {
+
+            board.set(coord_x, coord_y + i, size)
+        }
+    }
+
+
+    void set_location_hor(){
+
+        for (int i = 0; i < size; i++) {
+
+            board.set(coord_x + i, coord_y, size)
+        }
+    }
+
+    boolean possiblePlacementHor() {
+
+        for (int i = 0; i < size; i++) {
+
+            if (board.get(coord_x + i, coord_y) != 0)
+                return false
+        }
+
+        return true
+    }
+
+    boolean possiblePlacementVert() {
+
+        for (int i = 0; i < size; i++) {
+
+            if (board.get(coord_x, coord_y + i) != 0)
+                return false
+        }
+
+        return true
+    }
+
+    void generator(){
+
+        boolean flag = false
+
+        set_direction()
+
+        if(get_direction() == horizontal){
+
+            while(!flag){
+                setx_horizontal()
+                set_y()
+
+                flag = possiblePlacementHor()
+            }
+
+            for (int i = 0; i < size; i++) {
+
+                set_location_hor()
+            }
+
+
+        }
+
+        else if(get_direction() == vertical){
+
+            while(!flag){
+                set_x()
+                sety_vertical()
+                flag = possiblePlacementVert()
+            }
+
+            for (int i = 0; i < size; i++) {
+
+                set_location_vert()
+            }
+
+        }
 
     }
 
 }
+
+
+class Submarine extends Ships{
+
+    Submarine(){
+        set_size(submarine)
+        set_submarines()
+    }
+
+
+    void set_submarines(){
+
+        for(int i = 0; i < num_submarines; i++){
+            generator()
+        }
+    }
+
+}
+
+
+class Battleship extends Ships{
+
+    Battleship(){
+        set_size(battleship)
+        set_battleships()
+    }
+
+
+    void set_battleships(){
+
+        for(int i = 0; i < num_battleships; i++){
+            generator()
+        }
+    }
+
+}
+
+
+
