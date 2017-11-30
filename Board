@@ -23,11 +23,7 @@ class Board {
         board[x][y] = content
     }
 
-    void show(){
 
-        println board
-
-    }
 
     Board(){
 
