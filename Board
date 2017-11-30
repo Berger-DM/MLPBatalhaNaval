@@ -1,0 +1,42 @@
+package backend
+
+class Board {
+
+    static final int size = 15
+
+    static List<Integer> board = new ArrayList<Integer>()
+
+    void initBoard() {
+        for (int i = 0; i < size * size; i++) {
+
+            board << 0
+        }
+        board = board.collate(size)
+    }
+
+
+    int get(int x, int y){
+        return board[x][y]
+    }
+
+    void set(int x, int y, int content){
+        board[x][y] = content
+    }
+
+    void show(){
+
+        println board
+
+    }
+
+    Board(){
+
+        if(board.isEmpty())
+            initBoard()
+    }
+
+}
+
+
+
+
