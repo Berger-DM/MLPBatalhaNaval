@@ -1,4 +1,10 @@
+package backend
 
-new BackEnd()
-new FrontEnd()
-println(BackEnd.board[1][3])
+new Mine()
+new Submarine()
+new Battleship()
+
+for(int i = 0; i < 15; i++){
+
+    println Board.board[i]
+}
