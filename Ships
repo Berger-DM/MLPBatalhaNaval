@@ -1,0 +1,101 @@
+package backend
+
+class Ships {
+
+    static final int battleship = 3
+    static final int submarine = 2
+    static final int mine = 1
+    static final int num_battleships = 3
+    static final int num_submarines = 4
+    static final int num_mines = 5
+    static final int horizontal = 0
+    static final int vertical = 1
+
+    protected int direction
+    protected int coord_x, coord_y
+    protected int size
+
+    Board board = new Board()
+
+
+    def set_direction = { ->
+
+        direction = (int) (Math.random() * (2))
+    }
+
+    int get_direction(){
+
+        return direction
+    }
+
+
+//=========================
+    void set_location(int x, int y){
+
+       board.set(coord_x, coord_y, size)
+    }
+//==========================
+    int get_x(){
+        return coord_x
+    }
+
+    int get_y(){
+        return coord_y
+    }
+
+    int get_size(){
+        return size
+    }
+
+    void set_size(int ship_size){
+        size = ship_size
+
+    }
+
+
+    Ships(){
+
+    }
+
+}
+
+class Mine extends Ships{
+
+    Mine(){
+        set_size(mine)
+        set_mines()
+    }
+
+    void set_x(){
+        coord_x = (int) (Math.random() * (Board.size))
+    }
+
+    void set_y(){
+        coord_y = (int) (Math.random() * (Board.size))
+    }
+
+    void generator(){
+
+        set_x()
+        set_y()
+
+        while(board.get(coord_x, coord_y) != 0){
+            set_x()
+            set_y()
+        }
+
+        set_location(coord_x, coord_y)
+    }
+
+    void set_mines(){
+
+        for(int i = 0; i < num_mines; i++){
+            generator()
+        }
+    }
+
+    void nuke(){
+
+    }
+
+}
