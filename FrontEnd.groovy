@@ -1,3 +1,7 @@
+package frontend
+import backend.Objects
+import backend.Board
+
 import groovy.swing.SwingBuilder
 
 import javax.swing.*
@@ -7,7 +11,6 @@ import java.awt.Dimension
 
 
 class FrontEnd {
-    private board
 
     FrontEnd() {
         def builder = new SwingBuilder()
@@ -1509,11 +1512,11 @@ class FrontEnd {
     }
 
 
-    static int navios = Constants.num_targets
+    static int navios = Objects.num_targets
 
     static void testa(){
 
-         navios--
+        navios--
         if(navios == 0)
             println("Voce ganhou")
 
@@ -1541,4 +1544,5 @@ class FrontEnd {
         }
     }
 }
+
 
