@@ -8,6 +8,7 @@ abstract class Objects {
     static final int num_battleships = 3
     static final int num_submarines = 4
     static final int num_mines = 5
+    static final int num_targets = (battleship * num_battleships) + (submarine * num_submarines) + (mine * num_mines)
 
     protected int coord_x, coord_y
     protected int size
@@ -29,11 +30,11 @@ abstract class Objects {
     }
 
     void set_x(){
-        coord_x = (int) (Math.random() * (Board.size))
+        coord_x = (int) (Math.random() * (board.size))
     }
 
     void set_y(){
-        coord_y = (int) (Math.random() * (Board.size))
+        coord_y = (int) (Math.random() * (board.size))
     }
 
     boolean is_mine(){
@@ -93,11 +94,11 @@ abstract class Ships extends Objects{
     }
 
     int setx_horizontal(){
-        coord_x = (int) (Math.random() * (Board.size - size))
+        coord_x = (int) (Math.random() * (board.size - size))
     }
 
     int sety_vertical(){
-        coord_y = (int) (Math.random() * (Board.size - size))
+        coord_y = (int) (Math.random() * (board.size - size))
     }
 
     void set_location_vert(){
@@ -198,7 +199,6 @@ class Submarine extends Ships{
     }
 
 }
-
 
 class Battleship extends Ships{
 
