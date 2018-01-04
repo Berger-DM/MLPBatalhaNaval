@@ -15,8 +15,6 @@ class FrontEnd {
     FrontEnd() {
         def builder = new SwingBuilder()
 
-
-
         builder.edt {
             frame(title: 'Battleship', size: [800, 530], show: true, locationRelativeTo: null, resizable: false,
                     defaultCloseOperation: WindowConstants.EXIT_ON_CLOSE) {
@@ -1505,41 +1503,50 @@ class FrontEnd {
             }
 
         }
-        /*builder.optionPane().showMessageDialog(null, 'Regras do jogo:' + '\n'
-                + 'Você tem 50 Torpedos para destruir a frota inimiga.' + '\n'
+       builder.optionPane().showMessageDialog(null, 'Regras do jogo:' + '\n'
+                + 'Você tem 150 Torpedos para destruir a frota inimiga.' + '\n'
                 + 'Se não a destruir neste tempo, o contra-ataque do inimigo' + '\n'
-                + 'irá destruir sua frota. Boa sorte.')*/
+                + 'irá destruir sua frota. Boa sorte.')
     }
 
+    private static final int navios = Objects.num_targets
+    private static final int chances = 150
 
-    static int navios = Objects.num_targets
+    static void lose(){
+        JFrame frame = new JFrame("")
+        chances--
+        if(chances == 0)
+            JOptionPane.showMessageDialog(frame, "You lose")
+    }
 
-    static void testa(){
-
+    static void won(){
+        JFrame frame = new JFrame("")
         navios--
         if(navios == 0)
-            println("Voce ganhou")
-
+            JOptionPane.showMessageDialog(frame, "You win!")
     }
 
     static void showPos (JButton b, int row, int col, ArrayList<Integer> board) {
         int pos = (board[row][col] as Integer)
         switch (pos) {
             case 1:
-                b.setForeground(Color.RED)
                 b.setText('M') // M for Mine
-                testa()
+                won()
+                lose()
                 break
             case 2:
                 b.setText('S') // S for Submarine
-                testa()
+                won()
+                lose()
                 break
             case 3:
                 b.setText('B') // B for Battleship
-                testa()
+                won()
+                lose()
                 break
             default:
                 b.setText('W') // W for Water
+                lose()
                 break
         }
     }
